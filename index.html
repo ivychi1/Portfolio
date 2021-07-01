@@ -6,8 +6,83 @@
         <meta name="description" content="En-Hsuan Chi's Portfolio">
         
         <style>
+        /* 手機 */
+        @media screen and  (max-width: 379px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 350px;
+                margin: auto;
+                padding:2%;
+            }
+            .lines{
+                width: 100px;
+                margin-left: 20px ;
+            }
+            .button{
+                display: flex;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 55px ;
+            }
+            .button li{
+                margin-left: 50px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .home-content{
+                text-align: center;
+                margin-top: auto;
+                width: 80%;
+                border: 1px solid #555;
+            }
+            .works{
+                font-size: 14px;
+                font-family: sans-serif;
+                color:#ffffff;
+                background: blue;
+                border-radius: 4px;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+            .works:hover{
+                color:blue;
+                background: white;
+                border-color: blue;
+                border-style: solid;
+            }
+            footer{
+                margin: auto;
+                max-width: 500px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+        
+
         /* 小螢幕 */
-        @media screen and (max-width: 768px){
+        @media screen and (min-width: 380px) and  (max-width: 768px) {
             .page-header{
                 display: flex;
                 justify-content: space-between;
@@ -18,7 +93,7 @@
                 padding:2%;
             }
             .lines{
-                width: 270px;
+                width: 200px;
                 margin-left: 20px ;
             }
             .button{
@@ -42,6 +117,7 @@
                 text-align: center;
                 margin-top: -50px;
                 width: 80%;
+                border: 1px solid #555;
             }
             .works{
                 font-size: 14px;
