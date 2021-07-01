@@ -6,6 +6,155 @@
         <meta name="description" content="En-Hsuan Chi's Portfolio">
         
         <style>
+        /* 小螢幕 */
+        @media screen and (max-width: 768px){
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 700px;
+                margin: auto;
+                padding:2%;
+            }
+            .lines{
+                width: 270px;
+                margin-left: 20px ;
+            }
+            .button{
+                display: flex;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 55px ;
+            }
+            .button li{
+                margin-left: 50px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .home-content{
+                text-align: center;
+                margin-top: -50px;
+                width: 80%;
+            }
+            .works{
+                font-size: 14px;
+                font-family: sans-serif;
+                color:#ffffff;
+                background: blue;
+                border-radius: 4px;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+            .works:hover{
+                color:blue;
+                background: white;
+                border-color: blue;
+                border-style: solid;
+            }
+            footer{
+                margin: auto;
+                max-width: 500px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+
+        /* 中螢幕 */
+        @media screen and (min-width: 769px) and (max-width: 1023px) { 
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 1000px;
+                margin: auto;
+                padding:2%;
+            }
+            .lines{
+                width: 300px;
+                margin-left: 20px ;
+            }
+            .button{
+                display: flex;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 70px ;
+            }
+            .button li{
+                margin-left: 50px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .home-content{
+                text-align: center;
+                margin-top: -150px;
+                width: 80%;
+            }
+            .works{
+                font-size: 14px;
+                font-family: sans-serif;
+                color:#ffffff;
+                background: blue;
+                border-radius: 4px;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
+            .works:hover{
+                color:blue;
+                background: white;
+                border-color: blue;
+                border-style: solid;
+            }
+            footer{
+                margin: auto;
+                max-width: 500px;
+                margin-left: 80px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        } 
+
+        /* 大螢幕 */
+        @media screen and (min-width: 1024px) {
             .page-header{
                 display: flex;
                 justify-content: space-between;
@@ -17,7 +166,7 @@
             }
             .lines{
                 width: 38%;
-                margin: 20px ;
+                margin-left: 20px ;
             }
             .button{
                 display: flex;
@@ -38,7 +187,9 @@
             }
             .home-content{
                 text-align: center;
-                margin-top: -300px;
+                margin-top: -180px;
+                width: 38%;
+                /*border: 1px solid #555;*/
             }
             .works{
                 font-size: 14px;
@@ -59,10 +210,9 @@
             footer{
                 margin: auto;
                 max-width: 1280px;
-                margin-left: 150px;
                 background: #fff;
                 text-align: center;
-                padding: 50px;
+                padding: 30px;
                 /*border: 1px solid #555;*/
             }
             footer p{
@@ -75,6 +225,7 @@
             a:hover {
                 text-decoration:underline;
             }
+        }
           
         </style>
             <link rel="apple-touch-icon" sizes="180x180" href="image/icon_package/apple-touch-icon.png">
@@ -87,17 +238,23 @@
     </head>
 
     <body>
-            <header class="page-header wrapper"> <!-- 上面內容 -->
-                <h1> <img class="lines" src="image/3line.png" alt="首頁"> </h1>
-                <nav> <!-- 右上按鈕 -->
-                    <ul class="button"> 
-                        <li style="list-style-type:none;"><a href="about.html">ABOUT</a></li>
-                    </ul>
-                </nav>
-            </header>
+         <header class="page-header wrapper"> <!-- 上面內容 -->
+            <h1> <img class="lines" src="image/3line.png" alt="首頁"> </h1>
+            <nav> <!-- 右上按鈕 -->
+                <ul class="button wrapper"> 
+                    <li style="list-style-type:none;"><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="home-content wrapper">  <!-- 中間內容 --> 
-                <h1> <img src="image/logo.png" alt="首頁" width="45%"> </h1>
-                <a class="works" href="works.html" style="text-decoration:none">See My Works</a> <!-- 中間按鈕 -->
-            </div>
+        <div class="home-content wrapper">  <!-- 中間內容 --> 
+            <h1> <img src="image/logo.png" alt="首頁" width="70%"> </h1>
+            <a class="works" href="works.html" style="text-decoration:none">See My Works</a> <!-- 中間按鈕 -->
+         </div>
+
+         <footer>
+                <p class="footer-text">Copyright © 2021 En-Hsuan Chi.</p>
+        </footer>
+
     </body>
+</html>

@@ -6,6 +6,89 @@
         <meta name="description" content="En-Hsuan Chi's Works">
 
         <style>
+        /* 小螢幕 */
+        @media screen and (max-width: 768px){
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 700px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 180px;
+                margin: 10px ;
+            }
+            .button{
+                display: flex;
+                font-size: 14px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 60px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                max-width: 1280px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-left: 2px;
+                /*border: 1px solid #555;*/ 
+            }
+            .boxA {
+                width: 600px;
+                height: 371px;
+                position: relative;
+                display: inline-block;
+                /*border: 1px solid #555;*/   
+            }
+            .boxA .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+                
+            }
+            .boxA:hover .img-top {
+                display: inline;
+            }
+            footer{
+                margin: auto;
+                max-width: 1280px;
+                margin-left: 20px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+
+        /* 大螢幕 */
+        @media screen and (min-width: 1024px) {
             .page-header{
                 display: flex;
                 justify-content: space-between;
@@ -50,6 +133,7 @@
                 height: 313px;
                 position: relative;
                 display: inline-block;
+                
             }
             .boxA .img-top {
                 display: none;
@@ -59,23 +143,6 @@
                 z-index: 99;
             }
             .boxA:hover .img-top {
-                display: inline;
-            }
-            .boxB {
-                width: 400px;
-                height: 313px;
-                position: relative;
-                display: inline-block;
-                /*border: 1px solid #555;*/
-            }
-            .boxB .img-top {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 99;
-            }
-            .boxB:hover .img-top {
                 display: inline;
             }
             footer{
@@ -98,6 +165,7 @@
             a:hover {
                 text-decoration:underline;
             }
+        }
 
 
         </style>
@@ -150,21 +218,21 @@
                 <img src="image/work/kidult/kidult d.jpg" class="img-top" alt="kidult Title" width="100%"></a>
             </div> 
 
-            <div class="boxB"> <!-- 7 -->
+            <div class="boxA"> <!-- 7 -->
                 <img src="image/work/與寶寶接上線/與寶寶接上線.jpg" alt="KOOL" width="100%" />
                 <a href="baby.html">
                 <img src="image/work/與寶寶接上線/baby d.jpg" class="img-top" alt="與寶寶接上線 Title" width="100%"></a>
-            </div> <div class="boxB"> <!-- 9 -->
+            </div> <div class="boxA"> <!-- 9 -->
                 <img src="image/work/neon/neon.jpg" alt="KOOL" width="100%" />
                 <a href="neon.html">
                 <img src="image/work/neon/neon d.jpg" class="img-top" alt="neon Title" width="100%"></a>
             </div>
-            <div class="boxB"> <!-- 8 -->
+            <div class="boxA"> <!-- 8 -->
                 <img src="image/work/fairy/3fairy.jpg" alt="KOOL" width="100%" />
                 <a href="3fairy.html">
                 <img src="image/work/fairy/3fairy d.jpg" class="img-top" alt="@fairyfairyfairy Title" width="100%"></a>
             </div>
-            <div class="boxB"> <!-- 10 -->
+            <div class="boxA"> <!-- 10 -->
                 <img src="image/work/e_e/ce._eh.jpg" alt="ce._.eh" width="100%" />
                 <a href="ceeh.html">
                 <img src="image/work/e_e/e_e d.jpg" class="img-top" alt="@ce._.eh Title" width="100%"></a>
