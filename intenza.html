@@ -6,6 +6,222 @@
         <meta name="description" content="En-Hsuan Chi's Works">
 
         <style>
+        /* 小螢幕 */
+        @media screen and  (max-width: 768px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 700px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 200px;
+            }
+            .button{
+                display: flex;
+                font-size: 14px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 70px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                max-width: 1280px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                /*border: 1px solid #555;*/
+                margin:auto; 
+            }
+            .title {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .boxA {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+            .boxB {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .gif {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+            .word {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-left: -80px;
+                margin-bottom: 10px;
+            }
+            .try{
+                font-size: 14px;
+                font-family: sans-serif;
+                background: blue;
+                border-radius: 4px;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin:auto;
+                margin-bottom: 60px;
+            }
+            .try:hover{
+                background: white;
+                border-color: blue;
+                border-style: solid;
+            }
+            footer{
+                margin: auto;
+                max-width: 1280px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+                color: rgb(255, 255, 255);
+            }
+            a:hover {
+                text-decoration:underline;
+                color:blue;
+            }
+        }
+        /* 中螢幕 */
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 1280px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 220px;
+                margin: 20px ;
+            }
+            .button{
+                display: flex;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 80px;
+                margin-left: 50px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                max-width: 1280px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                /*border: 1px solid #555;*/
+                margin:auto; 
+            }
+            .title {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -20px;
+            }
+            .boxA {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+            .boxB {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .gif {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+            .word {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-left: -100px;
+            }
+            .try{
+                font-size: 14px;
+                font-family: sans-serif;
+                background: blue;
+                border-radius: 4px;
+                padding: 8px 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin:auto;
+                margin-bottom: 60px;
+            }
+            .try:hover{
+                background: white;
+                border-color: blue;
+                border-style: solid;
+            }
+            footer{
+                margin: auto;
+                max-width: 1280px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+                color: rgb(255, 255, 255);
+            }
+            a:hover {
+                text-decoration:underline;
+                color:blue;
+            }
+        }
+         /* 大螢幕 */
+         @media screen and (min-width: 1024px) {
             .page-header{
                 display: flex;
                 justify-content: space-between;
@@ -59,6 +275,11 @@
                 overflow: hidden;
                 margin-bottom: 50px;
             }
+            .boxB {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
             .gif {
                 width: 1000px;
                 height: 650px;
@@ -68,9 +289,10 @@
             }
             .word {
                 width: 1000px;
-                height: 500px;
                 /*border: 1px solid #555;*/
                 overflow: hidden;
+                margin-left: -50px;
+
             }
             .try{
                 font-size: 14px;
@@ -81,7 +303,8 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 margin:auto;
-                margin-bottom: 60px;
+                margin-top: 10px;
+                margin-bottom: 80px;
             }
             .try:hover{
                 background: white;
@@ -91,7 +314,6 @@
             footer{
                 margin: auto;
                 max-width: 1280px;
-                margin-left: 130px;
                 background: #fff;
                 text-align: center;
                 padding: 50px;
@@ -110,6 +332,8 @@
                 text-decoration:underline;
                 color:blue;
             }
+        }
+
         </style>
         <link rel="apple-touch-icon" sizes="180x180" href="image/icon_package/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="image/icon_package/favicon-32x32.png">
@@ -137,7 +361,7 @@
                 <img src="image/work/intenza/intenza s.jpg" alt="Intenza AR Filters" width="100%" />
             </div>
             <div class="word"> <!-- 1 -->
-                <img src="image/work/intenza/intenza w.jpg" alt="Instagram Filters for Intenza Introdution" width="105%" />
+                <img src="image/work/intenza/intenza w.jpg" alt="Instagram Filters for Intenza Introdution" width="110%" />
             </div>
             <div class="try">  <!-- 中間內容 --> 
                 <a href="https://www.instagram.com/intenzafitnessglobal/" style="text-decoration:none">Try These Fliters on Instagram</a> <!-- 中間按鈕 -->
@@ -163,7 +387,7 @@
             <div class="boxA"> <!-- 3 -->
                 <img src="image/work/intenza/intenza 4.jpg" alt="inspiration" width="100%" />
             </div> 
-            <div class="boxA"> <!-- 3 -->
+            <div class="boxB"> <!-- 3 -->
                 <img src="image/work/intenza/intenza 5.jpg" alt="about Intenza" width="100%" />
             </div> 
         </div>

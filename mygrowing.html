@@ -6,6 +6,183 @@
         <meta name="description" content="En-Hsuan Chi's Works">
 
         <style>
+        /* 小螢幕 */
+        @media screen and  (max-width: 768px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 700px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 200px;
+            }
+            .button{
+                display: flex;
+                font-size: 14px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 60px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;  
+            }
+            .title {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .boxA {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -50px;
+            }
+            .boxB {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -10px;
+            }
+            .boxC {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: 30px;
+            }
+            .word {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-left: -80px;
+                margin-bottom: 40px;
+            }
+            footer{
+                margin: auto;
+                max-width: 1280px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+        /* 中螢幕 */
+        @media screen and (min-width: 769px) and (max-width: 1023px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 1000px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 220px;
+                margin: 20px ;
+            }
+            .button{
+                display: flex;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 80px;
+                margin-left: 50px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;  
+            }
+            .title {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -20px;
+            }
+            .boxA {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -50px;
+            }
+            .boxB {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -10px;
+            }
+            .boxC {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: 30px;
+            }
+            .word {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-bottom: 40px;
+                margin-left: -80px;
+            }
+            footer{
+                margin: auto;
+                max-width: 1280px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+        /* 大螢幕 */
+        @media screen and (min-width: 1024px) {
             .page-header{
                 display: flex;
                 justify-content: space-between;
@@ -58,7 +235,12 @@
             }
             .boxB {
                 width: 1000px;
-                height: 650px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -10px;
+            }
+            .boxC {
+                width: 1000px;
                 /*border: 1px solid #555;*/
                 overflow: hidden;
                 margin-top: 30px;
@@ -68,12 +250,12 @@
                 height: 500px;
                 /*border: 1px solid #555;*/
                 overflow: hidden;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
+                margin-left: -80px;
             }
             footer{
                 margin: auto;
                 max-width: 1280px;
-                margin-left: 130px;
                 background: #fff;
                 text-align: center;
                 padding: 50px;
@@ -90,6 +272,8 @@
             a:hover {
                 text-decoration:underline;
             }
+        }
+
         </style>
         <link rel="apple-touch-icon" sizes="180x180" href="image/icon_package/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="image/icon_package/favicon-32x32.png">
@@ -117,7 +301,7 @@
                 <img src="image/work/MyGrowing/mygrowing s.jpg" alt="MyGrowing Table" width="100%" />
             </div>
             <div class="word"> <!-- 1 -->
-                <img src="image/work/MyGrowing/Mygrowing w.jpg" alt="MyGrowing Table Introdution" width="100%" />
+                <img src="image/work/MyGrowing/Mygrowing w.jpg" alt="MyGrowing Table Introdution" width="110%" />
             </div>
             <div class="boxA"> <!-- 6 -->
                 <img src="image/work/MyGrowing/mygrowing 01.jpg" alt="MyGrowing Table Background" width="100%" />
@@ -128,7 +312,7 @@
             <div class="boxB"> <!-- 6 -->
                 <img src="image/work/MyGrowing/mygrowing 03.jpg" alt="MyGrowing Table" width="100%" />
             </div>
-            <div class="boxB"> <!-- 6 -->
+            <div class="boxC"> <!-- 6 -->
                 <img src="image/work/MyGrowing/mygrowing sketch.jpg" alt="MyGrowing Table's Sketch" width="100%" />
             </div>
         </div>

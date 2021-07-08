@@ -10,6 +10,178 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <style>
+        /* 小螢幕 */
+        @media screen and  (max-width: 768px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 700px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 200px;
+            }
+            .button{
+                display: flex;
+                font-size: 14px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 60px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;  
+            }
+            .title {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .boxA {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .boxC {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .word {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-left: -100px;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+                margin-top: -20px;
+                margin-bottom:30px;
+                /*border: 1px solid #555;*/
+            }
+            footer{
+                margin: auto;
+                max-width: 1380px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+         /* 中螢幕 */
+         @media screen and (min-width: 769px) and (max-width: 1023px) {
+            .page-header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .wrapper{
+                max-width: 1000px;
+                margin: auto;
+                padding: 2%;
+            }
+            .lines{
+                width: 220px;
+                margin: 20px ;
+            }
+            .button{
+                display: flex;
+                font-size: 16px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-top: 80px;
+                margin-left: 50px;
+            }
+            .button li{
+                margin-left: 40px;
+            }
+            .button a{
+                color:#8c8c8c
+            }
+            .button a:hover{
+                color:#000000
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;  
+            }
+            .title {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -20px;
+            }
+            .boxA {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+            }
+            .boxC {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-top: -40px;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+            .word {
+                width: 1000px;
+                /*border: 1px solid #555;*/
+                overflow: hidden;
+                margin-left: -140px;
+                margin-bottom: -50px;
+            }
+            footer{
+                margin: auto;
+                max-width: 1380px;
+                background: #fff;
+                text-align: center;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            footer p{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            a {
+                text-decoration:none;
+            }
+            a:hover {
+                text-decoration:underline;
+            }
+        }
+        /* 大螢幕 */
+        @media screen and (min-width: 1024px) {
             .page-header{
                 display: flex;
                 justify-content: space-between;
@@ -61,12 +233,6 @@
                 overflow: hidden;
                 margin-top: -70px;
             }
-            .boxB {
-                width: 1000px;
-                height: 1195px;
-                /*border: 1px solid #555;*/
-                overflow: hidden;
-            }
             .boxC {
                 width: 1000px;
                 height: 300px;
@@ -105,6 +271,8 @@
             a:hover {
                 text-decoration:underline;
             }
+        }
+
         </style>
         <link rel="apple-touch-icon" sizes="180x180" href="image/icon_package/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="image/icon_package/favicon-32x32.png">
@@ -133,10 +301,7 @@
             </div>
             <div class="word"> <!-- 1 -->
                 <a href="https://www.instagram.com/ce._.eh/">
-                <img src="image/work/e_e/ceeh w.jpg" alt="@ce._.eh Introdution" width="100%" /></a>
-            </div>
-            <div class="boxA"> <!-- 6 -->
-                <img src="image/work/e_e/ceeh 01.jpg" alt="@ce._.eh Logo Intro" width="100%" />
+                <img src="image/work/e_e/ceeh w.jpg" alt="@ce._.eh Introdution" width="120%" /></a>
             </div>
             <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -183,6 +348,9 @@
                   <span class="carousel-control-next-icon"></span>
                 </a>
               </div>
+              <div class="boxA"> <!-- 6 -->
+                <img src="image/work/e_e/ceeh 01.jpg" alt="@ce._.eh Logo Intro" width="100%" />
+            </div>
               <div class="boxC"> <!-- 6 -->
                 <a href="https://www.instagram.com/ce._.eh/">
                 <img src="image/work/e_e/ceeh more.jpg" alt="@ce._.eh instagram Account" width="100%" /></a>
