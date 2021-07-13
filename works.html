@@ -219,24 +219,51 @@
             .boxA:hover .img-top {
                 display: inline;
             }
-            footer{
-                margin: auto;
-                max-width: 1280px;
-                background: #fff;
-                text-align: center;
-                padding: 50px;
-                /*border: 1px solid #555;*/
-            }
-            footer p{
-                color: black;
-                font-size: small;
-                font-family: sans-serif;
-            }
             a {
                 text-decoration:none;
             }
             a:hover {
                 text-decoration:underline;
+            }
+            footer{
+                margin: auto;
+                max-width: 1100px;
+                background: #fff;
+                padding: 50px;
+                border: 1px solid #555;
+            }
+            .copyright{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            .footer-clean {
+                padding:50px 0;
+                background-color:#fff;
+                color:#4b4c4d;
+            }
+            .footer-clean h3 {
+                color: black;
+                font-family: sans-serif;
+                margin-bottom:12px;
+                font-weight:bold;
+                font-size:16px;
+            }
+            .footer-clean ul {
+                font-family: sans-serif;
+                padding:0;
+                list-style:none;
+                line-height:1.6;
+                font-size:14px;
+                margin-bottom:0;
+            }
+            .footer-clean ul a {
+                color:inherit;
+                text-decoration:none;
+                opacity:0.8;
+            }
+            .footer-clean .item.social {
+                text-align:right;
             }
         }
 
@@ -313,12 +340,32 @@
         </div>
 
         <!-- 下面底 -->
-        <footer>
-                <div class="container">
-                    <p class="footer-text">Copyright © 2021 En-Hsuan Chi.</p>
-                </div>
-        </footer>
-
+            <div class="footer-clean">
+                <footer>
+                    <div class="footer">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>En-Hsuan Chi.</h3>
+                                <ul>
+                                    <li><a href="#">Designer</a></li>
+                                    <li><a href="#">ivychi1@yahoo.com.tw</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 item social">
+                                <a href="https://www.instagram.com/ivychi1/">
+                                    <img src="image/instagram-2.png" alt="icon instagram" width="3%" /></a>
+                                <a href="https://www.youtube.com/channel/UCUOEKdhlikAnm-qbPO5jCmQ">
+                                    <img src="image/youtube.png" alt="icon youtube" width="3%" /></a>
+                                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                                <p class="copyright">Copyright © 2021 En-Hsuan Chi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
         
     </body>
     
