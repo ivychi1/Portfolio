@@ -61,6 +61,31 @@
                 border-color: blue;
                 border-style: solid;
             }
+            .container{
+                max-width: 700px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-left: 2px;
+                /*border: 1px solid #555;*/ 
+            }
+            .boxA {
+                width: 600px;
+                position: relative;
+                display: inline-block;
+                /*border: 1px solid #555;*/   
+            }
+            .boxA .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
+            .boxA:hover .img-top {
+                display: inline;
+            }
             footer{
                 margin: auto;
                 max-width: 700px;
@@ -137,9 +162,34 @@
                 border-color: blue;
                 border-style: solid;
             }
+            .container{
+                max-width: 1000px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-left: 2px;
+                /*border: 1px solid #555;*/
+            }
+            .boxA {
+                width: 600px;
+                position: relative;
+                display: inline-block;
+                /*border: 1px solid #555;*/ 
+            }
+            .boxA .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
+            .boxA:hover .img-top {
+                display: inline;
+            }
             footer{
                 margin: auto;
-                max-width: 500px;
+                max-width: 700px;
                 background: #fff;
                 text-align: center;
                 padding: 50px;
@@ -220,16 +270,81 @@
                 padding: 30px;
                 /*border: 1px solid #555;*/
             }
-            footer p{
-                color: black;
-                font-size: small;
-                font-family: sans-serif;
+            .container{
+                max-width: 1280px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin: auto;
+                /*border: 1px solid #555;*/
+            }
+            .boxA {
+                width: 400px;
+                position: relative;
+                display: inline-block;
+                
+            }
+            .boxA .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
+            .boxA:hover .img-top {
+                display: inline;
             }
             a {
                 text-decoration:none;
             }
             a:hover {
                 text-decoration:underline;
+            }
+            footer{
+                margin: auto;
+                max-width: 1150px;
+                background: #fff;
+                padding: 50px;
+                /*border: 1px solid #555;*/
+            }
+            .copyright{
+                color: black;
+                font-size: small;
+                font-family: sans-serif;
+            }
+            .footer-clean {
+                padding:50px 0;
+                background-color:#fff;
+                color:#4b4c4d;
+            }
+            .footer-clean h3 {
+                color: black;
+                font-family: sans-serif;
+                margin-bottom:12px;
+                font-weight:bold;
+                font-size:16px;
+            }
+            .footer-clean ul {
+                font-family: sans-serif;
+                padding:0;
+                list-style:none;
+                line-height:1.6;
+                font-size:14px;
+                margin-bottom:0;
+            }
+            .footer-clean ul a {
+                color:inherit;
+                text-decoration:none;
+                opacity:0.8;
+            }
+            .footer-clean .item.social {
+                width: 900px;
+                margin-top: -80px;
+                margin-left: 250px;
+                text-align:right;
+                
+                 /*border: 1px solid #555;*/
             }
         }
           
@@ -256,12 +371,82 @@
         <div class="home-content wrapper">  <!-- 中間內容 --> 
             <h1> <img src="image/logo.png" alt="首頁" width="100%"> </h1>
             <a class="works" href="works.html" style="text-decoration:none">See My Works</a> <!-- 中間按鈕 -->
-         </div>
+        </div>
 
-         <footer>
-            <div class="container">
-                <p class="footer-text">Copyright © 2021 En-Hsuan Chi.</p>
+         <div class="container">
+            <div class="boxA"> <!-- 1 -->
+                <img src="image/work/KOOL/KOOL.jpg" alt="KOOL" width="100%" />
+                <a href="kool.html">
+                <img src="image/work/KOOL/KOOL d.jpg" class="img-top" alt="KOOL Title" width="100%"></a>
             </div>
-        </footer>  
-    </body>
+            <div class="boxA"> <!-- 2 -->
+                <img src="image/work/Bubble/bubble.jpg" alt="Bubble" width="100%" />
+                <a href="bubble.html">
+                <img src="image/work/Bubble/Bubble d.jpg" class="img-top" alt="泡泡膠囊 Title" width="100%"></a>
+            </div>
+            <div class="boxA"> <!-- 3 -->
+                <img src="image/work/intenza/intenza.jpg" alt="Intenza" width="100%" />
+                <a href="intenza.html">
+                <img src="image/work/intenza/intenza d.jpg" class="img-top" alt="intenza Title" width="100%"></a>
+            </div> 
+            <div class="boxA"> <!-- 5 -->
+                <img src="image/work/MyGrowing/MyGrowing Table.jpg" alt="MyGrowing Tablbe" width="100%" />
+                <a href="mygrowing.html">
+                <img src="image/work/MyGrowing/MyGrowing Table d.jpg" class="img-top" alt="MyGrowing Table Title" width="100%"></a>
+            </div>
+            <div class="boxA"> <!-- 4 -->
+                <img src="image/work/kidult/kidult.jpg" alt="Kidult" width="100%" />
+                <a href="kidult.html">
+                <img src="image/work/kidult/kidult d.jpg" class="img-top" alt="kidult Title" width="100%"></a>
+            </div> 
+    
+            <div class="boxA"> <!-- 7 -->
+                <img src="image/work/與寶寶接上線/與寶寶接上線.jpg" alt="KOOL" width="100%" />
+                <a href="baby.html">
+                <img src="image/work/與寶寶接上線/baby d.jpg" class="img-top" alt="與寶寶接上線 Title" width="100%"></a>
+            </div> 
+            <div class="boxA"> <!-- 9 -->
+                <img src="image/work/neon/neon.jpg" alt="KOOL" width="100%" />
+                <a href="neon.html">
+                <img src="image/work/neon/neon d.jpg" class="img-top" alt="neon Title" width="100%"></a>
+            </div>
+            <div class="boxA"> <!-- 8 -->
+                <img src="image/work/fairy/3fairy.jpg" alt="KOOL" width="100%" />
+                <a href="3fairy.html">
+                <img src="image/work/fairy/3fairy d.jpg" class="img-top" alt="@fairyfairyfairy Title" width="100%"></a>
+            </div>
+            <div class="boxA"> <!-- 10 -->
+                <img src="image/work/e_e/ce._eh.jpg" alt="ce._.eh" width="100%" />
+                <a href="ceeh.html">
+                <img src="image/work/e_e/e_e d.jpg" class="img-top" alt="@ce._.eh Title" width="100%"></a>
+            </div>
+        </div>
+
+         <div class="footer-clean">
+            <footer>
+                <div class="footer">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>En-Hsuan Chi.</h3>
+                            <ul>
+                                <li><a href="#">Designer</a></li>
+                                <li><a href="#">ivychi1@yahoo.com.tw</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social">
+                            <a href="https://www.instagram.com/ivychi1/">
+                                <img src="image/instagram-2.png" alt="icon instagram" width="5%" /></a>
+                            <a href="https://www.youtube.com/channel/UCUOEKdhlikAnm-qbPO5jCmQ">
+                                <img src="image/youtube.png" alt="icon youtube" width="5%" /></a>
+                            <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                            <a href="#"><i class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">Copyright © 2021 En-Hsuan Chi.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
